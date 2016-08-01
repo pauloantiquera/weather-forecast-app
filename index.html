@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Workshop AngularJS + TDD">
+    <meta name="author" content="Paulo Antiquera">
+    <link rel="icon" href="assets/favicon/favicon.ico">
+
+    <title>Weather Forecast App</title>
+
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/owfont/css/owfont-regular.min.css" rel="stylesheet">
+    <link href="assets/css/weather-forecast-app.css" rel="stylesheet">
+  </head>
+
+  <body ng-app="WeatherForecastApp">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Weather Forecast App</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div ui-view></div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- Weather Forecast App JS -->
+    <script src="app/weatherForecastApp.module.js"></script>
+    <script src="app/weatherForecastApp.assembly.js"></script>
+    <!-- Weather Forecast App JS -->
+
+    <!-- Current Weather Module -->
+    <script src="app/currentweather/currentWeather.module.js"></script>
+    <script src="app/currentweather/currentWeather.route.js"></script>
+    <script src="app/currentweather/currentWeather.resource.js"></script>
+    <script src="app/currentweather/citiesCurrentWeather.controller.js"></script>
+    <!-- Current Weather Module -->
+  </body>
+</html>

@@ -1,0 +1,33 @@
+body {
+	padding-top: 60px;
+}
+
+.weather-card {
+	background-color: #f0f0f0;
+	width: 220px;
+	height: 120px;
+	padding: 10px;
+	margin: 2px;
+	float: left; 
+	/*border-style: outset;*/
+	border-width: thin;
+}
+
+.weather-card-icon {
+	float:left;	
+}
+
+.weather-card-title {
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 14pt;
+	text-align: right;
+	text-shadow: transparent;
+	color: #505050;
+}
+
+.weather-card-temperature {
+	font-weight: bolder;
+	font-size: 32pt;
+	float: right;
+}

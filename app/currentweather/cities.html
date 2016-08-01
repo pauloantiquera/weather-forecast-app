@@ -1,0 +1,10 @@
+<div class="container" ng-controller="citiesCurrentWeatherController as cityCurrentWeatherCtrl">	
+	<div class="row">
+		<div class="weather-card" ng-repeat="city in cityCurrentWeatherCtrl.citiesCurrentWeatherList | orderBy: 'cityName'">
+			<div class="weather-card-icon"><i ng-class="cityCurrentWeatherCtrl.getOwfontClasses(city.weather[0].id, city.weather[0].icon)"></i></div>
+			<div class="weather-card-title">{{city.cityName}}</div>
+			<div class="weather-card-temperature">{{city.main.temp | number : 0}} &deg;</div>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,33 @@
+{
+  "name": "weather-forecast-app",
+  "description": "Open Weather API client",
+  "main": "",
+  "authors": [
+    "Paulo Antiquera"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "AngularJS",
+    "TDD",
+    "Node.js",
+    "Karma",
+    "Jasmine"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-mocks": "~1.4.8",
+    "angular-resource": "~1.4.8",
+    "bootstrap": "~3.3.6",
+    "angular-ui-router": "~0.2.15",
+    "owfont": "*"
+  }
+}
